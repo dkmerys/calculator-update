@@ -24,7 +24,7 @@ $(document).ready(function() {
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
     var result = add(number1, number2);
-    $("#output").text(result);
+    $("#addoutput").text(result);
   });
 });
 
@@ -33,18 +33,18 @@ $(document).ready(function() {
     event.preventDefault();
     var number1 = parseInt($("#subtract1").val());
     var number2 = parseInt($("#subtract2").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
+    var result = subtract(number1, number2);
+    $("#subtractoutput").text(result);
   });
 });
 
 $(document).ready(function() {
   $("form#multiply").submit(function(event) {
     event.preventDefault();
-    var number1 = parseInt($("#multiply").val());
-    var number2 = parseInt($("#multiply").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
+    var number1 = parseInt($("#multiply1").val());
+    var number2 = parseInt($("#multiply2").val());
+    var result = multiply(number1, number2);
+    $("#multiplyoutput").text(result);
   });
 });
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
     event.preventDefault();
     var number1 = parseInt($("#divide1").val());
     var number2 = parseInt($("#divide2").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
+    var result = divide(number1, number2);
+    $("#divideoutput").text(result);
   });
 });
